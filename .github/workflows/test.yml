@@ -17,7 +17,7 @@ jobs:
         with:
           registry: ghcr.io
           username: Saeedeh-tech
-          password: ${{ secrets.GHCR_PAT}}
+          password: ${{ secrets.TOKEN_ACCESS}}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
@@ -25,4 +25,4 @@ jobs:
           context: ./docker  
           file: ./docker/Dockerfile
           push: true
-          tags: ghcr.io/saeedeh-tech/ghcr-test-image:latest
+          tags: ghcr.io/saeedeh-tech/ghcr-test:latest
