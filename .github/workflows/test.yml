@@ -17,7 +17,7 @@ jobs:
         with:
           registry: ghcr.io
           username: Saeedeh-tech
-          password: ${{ secrets.TOKEN_ACCESS1}}
+          password: ${{ secrets.TOKEN_ACCESS}}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
