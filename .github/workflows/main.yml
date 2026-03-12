@@ -3,7 +3,7 @@ name: Publish GHCR
 on:
   push:
     branches:
-      - React-App  # or the branch you want to trigger
+      - main  # or the branch you want to trigger
 
 jobs:
   build-and-push:
@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/React-App/ghcr-test:latest
+          tags: ghcr.io/${{ github.repository_owner }}/ghcr-test:latest
