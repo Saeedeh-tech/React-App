@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/ghcr-test:latest
+          tags: ghcr.io/saeedeh-tech/ghcr-test:latest
