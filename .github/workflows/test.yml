@@ -25,4 +25,4 @@ jobs:
           context: ./docker  
           file: ./docker/Dockerfile
           push: true
-          tags: ghcr.io/saeedeh-tech/react-app:latest
+          tags: ghcr.io/saeedeh-tech/react-app/test-image:latest
